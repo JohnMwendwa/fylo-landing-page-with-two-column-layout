@@ -47,7 +47,7 @@ svg {
 #header__container .container {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 1rem;
   margin-bottom: 250px;
 }
 
@@ -90,23 +90,21 @@ header ul a {
 .header__text {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.5rem;
   order: 2;
 }
 
 .header__text h1 {
-  font-size: 2rem;
+  font-size: 1.55rem;
   text-align: center;
   color: var(--very-dark-blue);
   font-weight: 700;
-  margin-bottom: 2rem;
 }
 
 .header__text p {
   max-width: 23rem;
-  margin: 0 auto 2rem;
+  margin: 0 auto;
   text-align: center;
-  word-spacing: 0.2rem;
 }
 
 #cta__form {
@@ -151,6 +149,10 @@ header ul a {
 }
 
 @media screen and (min-width: 868px) {
+  #header__container .container {
+    padding: 0 3rem;
+  }
+
   .header__content {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -180,7 +182,7 @@ header ul a {
   }
 
   .header__text h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-align: left;
   }
 
@@ -195,7 +197,7 @@ header ul a {
 #productive {
   position: relative;
   background-color: var(--light-grayish-blue);
-  padding: 5rem 2rem;
+  padding: 5rem 1rem;
 }
 
 #productive::before {
@@ -228,7 +230,7 @@ header ul a {
 }
 
 .productive__text h2 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   color: var(--very-dark-blue);
   margin-bottom: 2rem;
   font-weight: 700;
@@ -283,6 +285,7 @@ header ul a {
 .testimonial__footer {
   display: flex;
   align-items: center;
+  text-align: left;
   gap: 1rem;
 }
 
@@ -309,6 +312,10 @@ header ul a {
 }
 
 @media screen and (min-width: 868px) {
+  #productive {
+    padding: 5rem 3rem;
+  }
+
   #productive .container {
     gap: 3rem;
   }
@@ -326,7 +333,7 @@ header ul a {
   }
 
   .productive__text h2 {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
     text-align: left;
   }
 
@@ -346,7 +353,7 @@ header ul a {
 /* CTA section */
 #cta {
   background-color: var(--desaturated-blue);
-  padding: 5rem 2rem;
+  padding: 5rem 1rem;
 }
 
 #cta .container {
@@ -416,12 +423,20 @@ header ul a {
 }
 
 @media screen and (min-width: 868px) {
+  #cta {
+    padding: 5rem 3rem;
+  }
+
   #cta .container {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .cta__content {
+    margin: 0;
+  }
+
   #cta h2 {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
     text-align: left;
   }
 
@@ -438,7 +453,7 @@ header ul a {
 footer {
   background-color: var(--very-dark-blue);
   color: var(--light-grayish-blue);
-  padding: 5rem 2rem;
+  padding: 5rem 1rem;
 }
 
 footer .container {
@@ -506,6 +521,10 @@ footer .container {
 }
 
 @media screen and (min-width: 868px) {
+  footer {
+    padding: 5rem 3rem;
+  }
+
   .footer__content {
     grid-template-columns: repeat(3, 1fr);
   }
